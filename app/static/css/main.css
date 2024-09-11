@@ -1383,6 +1383,19 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
+.live-banner {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff4d4d; /* Red color */
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  z-index: 10;
+}
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
