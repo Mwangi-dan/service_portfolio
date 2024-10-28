@@ -9,8 +9,12 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <link href="{{ url_for('static', filename='img/favicon/favicon-96x96') }}" rel="icon">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon/favicon-96x96') }}" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/favicon/favicon.svg') }}" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon/favicon.ico') }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/favicon/apple-touch-icon.png') }}" />
+  <link rel="manifest" href="{{ url_for('static', filename='img/favicon/site.webmanifest') }}" />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -34,7 +38,7 @@
 
       <a href="{{ url_for('portfolio.index') }}" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="{{ url_for('static', filename='img/tawa_logo.png') }}" alt="">
         <h1 class="sitename">Daniel</h1>
       </a>
 
